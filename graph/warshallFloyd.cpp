@@ -1,11 +1,12 @@
 #pragma once
+
 #include <vector>
 #include <algorithm>
 using namespace std;
 
 //ワーシャルフロイドライブラリ
 //隣接行列形式でデータを渡す
-//負閉路の存在は想定されていないたえ、判定はされない
+//負閉路の存在は想定されていないため、判定はされない
 void warshallFloyd(vector<vector<long long>>& dist) {
     int N = (int)dist.size();
     for (int i = 0; i < N; i++) {
